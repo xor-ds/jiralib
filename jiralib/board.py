@@ -35,7 +35,7 @@ class Board:
                     # 'name': issue['fields']['summary'] if 'summary' in issue['fields'].keys() else ''
                  }.items()) + list(board_transitions.items()))))
 
-        return pd.DataFrame(rows)
+        return pd.DataFrame(rows).set_index('id')
 
     def __project_single_issue(self, issue):
         status_changes = get_status_changes(issue)
