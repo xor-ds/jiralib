@@ -152,4 +152,4 @@ if __name__ == '__main__':
 
     board = Board(board_config)
     df = board.project_issues([issue, issue, issue])
-    print(df[ ['id', 'link'] ])
+    print(df)
