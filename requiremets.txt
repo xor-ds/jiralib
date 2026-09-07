@@ -1,0 +1,6 @@
+atlassian-python-api
+requests
+urllib3
+pandas
+setuptools
+pandas
